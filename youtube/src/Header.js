@@ -15,9 +15,9 @@ export const Header = () => {
       <div className="header-left">
         <MenuIcon style={{ fontSize: 28 }} className="header-icon" />
 
-        {/* <Link to="/"> */}
-        <img src="./logo.jpg" className="header-logo" alt="youtube" />
-        {/* </Link> */}
+        <Link to="/">
+          <img src="./logo.jpg" className="header-logo" alt="youtube" />
+        </Link>
       </div>
 
       <div className="header-middle">
@@ -29,7 +29,9 @@ export const Header = () => {
         />
 
         {/* <Link to={`/search/${inputSearch}`} className="header-input-icon"> */}
-        <SearchIcon className="search-icon" />
+        <Link to={`/search/${inputSearch}`}>
+          <SearchIcon className="search__icon" />
+        </Link>
         {/* </Link> */}
       </div>
 
